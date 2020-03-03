@@ -1,0 +1,32 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MahApps.Metro.IconPacks.Material/3.3.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.3.0.19"
+          },
+          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.3.0.19"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MahApps.Metro.IconPacks.Material/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lzDU0zjxcA8y14LvTlMUL9Idf9DLiE4URqPVK68cH4DOpC/lpedIvH5xKCyuNgNl7MyPHPFFdgsyk4cKuP4+CQ==",
+      "path": "mahapps.metro.iconpacks.material/3.3.0",
+      "hashPath": "mahapps.metro.iconpacks.material.3.3.0.nupkg.sha512"
+    }
+  }
+}

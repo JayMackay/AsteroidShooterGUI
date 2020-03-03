@@ -1,0 +1,152 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MahApps.Metro.IconPacks.Material/3.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll": {},
+          "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "MahApps.Metro.IconPacks.Material/3.3.0": {
+      "sha512": "lzDU0zjxcA8y14LvTlMUL9Idf9DLiE4URqPVK68cH4DOpC/lpedIvH5xKCyuNgNl7MyPHPFFdgsyk4cKuP4+CQ==",
+      "type": "package",
+      "path": "mahapps.metro.iconpacks.material/3.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net45/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net45/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net45/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net45/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net45/MahApps.Metro.IconPacks.Material.xml",
+        "lib/net46/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net46/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net46/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net46/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net46/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net46/MahApps.Metro.IconPacks.Material.xml",
+        "lib/net47/MahApps.Metro.IconPacks.Core.dll",
+        "lib/net47/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/net47/MahApps.Metro.IconPacks.Core.xml",
+        "lib/net47/MahApps.Metro.IconPacks.Material.dll",
+        "lib/net47/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/net47/MahApps.Metro.IconPacks.Material.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Core.xml",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.IconPacks.Material.xml",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.dll",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Core.xml",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.dll",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/netcoreapp3.1/MahApps.Metro.IconPacks.Material.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.dll",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pdb",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.pri",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Core.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.dll",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.pdb",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.pri",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material/MahApps.Metro.IconPacks.Material.xr.xml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material/Themes/Generic.xaml",
+        "lib/uap10.0.16299/MahApps.Metro.IconPacks.Material/Themes/PackIconMaterial.xaml",
+        "logo_small.png",
+        "mahapps.metro.iconpacks.material.3.3.0.nupkg.sha512",
+        "mahapps.metro.iconpacks.material.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "MahApps.Metro.IconPacks.Material >= 3.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Jarvis\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Jarvis\\Desktop\\AsteroidShooterGUI\\AsteroidShooterGUI.csproj",
+      "projectName": "AsteroidShooterGUI",
+      "projectPath": "C:\\Users\\Jarvis\\Desktop\\AsteroidShooterGUI\\AsteroidShooterGUI.csproj",
+      "packagesPath": "C:\\Users\\Jarvis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jarvis\\Desktop\\AsteroidShooterGUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Jarvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "MahApps.Metro.IconPacks.Material": {
+            "target": "Package",
+            "version": "[3.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
