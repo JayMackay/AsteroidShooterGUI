@@ -1,4 +1,3 @@
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI.csprojAssemblyReference.cache
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI_MarkupCompile.cache
@@ -18,3 +17,5 @@ C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShoot
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\MahApps.Metro.IconPacks.Core.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\MahApps.Metro.IconPacks.Material.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI.csproj.CopyComplete
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\ButtonTheme.baml
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\App.baml

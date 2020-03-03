@@ -8,7 +8,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="380"
         AllowsTransparency="True" Background="Transparent"
-        WindowStyle="None" ResizeMode="NoResize">
+        WindowStyle="None" ResizeMode="NoResize"
+        MouseDown="Window_MouseDown">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -27,14 +28,14 @@
             </Border>
 
             <!--LOGO HEADER-->
-            <StackPanel VerticalAlignment="Center">
+            <StackPanel VerticalAlignment="Center" Height="171">
                 <TextBlock Text="Asteroid Shooter"
                           FontWeight="Light"
                           FontFamily="helvetica"
                           FontSize="22"
                           Foreground="White"
-                          HorizontalAlignment="Center" Margin="0,70,0,0"/>
-                <Image Source="Images/Logo.png" Width="80" Margin="0,-145,0,0" Height="80"/>
+                          HorizontalAlignment="Center" Margin="0,110,0,0"/>
+                <Image Source="Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
             </StackPanel>
 
             <!--USERNAME INPUT-->
