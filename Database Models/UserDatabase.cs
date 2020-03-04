@@ -11,13 +11,22 @@ namespace AsteroidShooterGUI.Database_Models
         public DbSet<User> Users { get; set; }
         public DbSet<HighScore> HighScores { get; set; }
 
+        //SQL Scaffolding Parameters
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite("Data Source=UserDatabase.db");
+            => options.UseSqlServer(
+                "Data Source = localhost; " +
+                "Initial Catalog = UserDatabase; " +
+                "Persist Security Info = True; " +
+                "User ID = SA; Password = Passw0rd2018");
+                
+                //Package Manager Command To Initialize New Database Instance
+                //Add-Migration InitialUserDatabase
+                //Update-Database
     }
 
     public class User
     {
-        //User Table Attribute
+        //User Table Attributes
         public int UserId { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }

@@ -2,7 +2,7 @@
 
 namespace AsteroidShooterGUI.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InitialUserDatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,7 +11,7 @@ namespace AsteroidShooterGUI.Migrations
                 columns: table => new
                 {
                     UserId = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     firstName = table.Column<string>(nullable: true),
                     lastName = table.Column<string>(nullable: true),
                     userName = table.Column<string>(nullable: true),
@@ -27,7 +27,7 @@ namespace AsteroidShooterGUI.Migrations
                 columns: table => new
                 {
                     HighScoreId = table.Column<int>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     highScore = table.Column<int>(nullable: false),
                     UserId = table.Column<int>(nullable: false)
                 },
