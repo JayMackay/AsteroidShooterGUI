@@ -79,7 +79,6 @@ namespace AsteroidShooterGUI
                 errormessage.Text = "Password is not matching";
                 passwordConfirmText.Focus();
             }
-
             //SQL Database Entry
             else
             {
