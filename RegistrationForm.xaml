@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AsteroidShooterGUI"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
-        Title="RegistrationForm" Height="600" Width="800"
+        Title="RegistrationForm" Height="500" Width="800"
         AllowsTransparency="True" Background="Transparent"
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="Window_MouseDown">
@@ -28,7 +28,7 @@
             </Border>
 
             <!--LOGO HEADER-->
-            <StackPanel VerticalAlignment="Center" Height="171">
+            <StackPanel VerticalAlignment="Center" Height="171" Margin="0,-74,0,0">
                 <TextBlock Text="User Registration Form"
                           FontWeight="Light"
                           FontFamily="helvetica"
@@ -38,9 +38,18 @@
                 <Image Source="Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
             </StackPanel>
 
+            <TextBlock FontFamily="Helvetica"  
+                x:Name ="errormessage"
+                HorizontalAlignment="Center"
+                Height="20" Width="248"
+                Margin="0,150,0,0"  
+                VerticalAlignment="Top" 
+                OpacityMask="Crimson" 
+                Foreground="#FFE5572C"/>
+
             <!--FIRST NAME INPUT-->
             <StackPanel Grid.Row="1" >
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0,-70,0,0">
                     <TextBlock FontFamily="Helvetica"
                             FontWeight="Regular"
                             Text="First Name:"
@@ -51,7 +60,8 @@
                             Opacity="0.5"
                             Height="25"
                             Margin="154,0,0,0"/>
-                    <TextBox  FontFamily="Helvetica"
+                    <TextBox x:Name="firstNameText" 
+                            FontFamily="Helvetica"
                             FontWeight="UltraLight"
                             Text=""
                             FontSize="20"
@@ -63,12 +73,12 @@
                             Height="25"
                             Margin="15,0,0,0"/>
                     <iconPacks:PackIconMaterial Kind="Text"
-                            Foreground="White" Margin="5,0,0,0"/>
+                            Foreground="White" Margin="5,23,0,0"/>
                 </StackPanel>
-                <Border Width="250" Height="2" Background="White" Opacity="0.5"/>
+                <Border Width="250" Height="2" Background="White" Opacity="0.5" Margin="0,-41,0,0"/>
 
                 <!--LAST NAME INPUT-->
-                <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                <StackPanel Orientation="Horizontal" Margin="0,-8,0,0">
                     <TextBlock FontFamily="Helvetica"
                             FontWeight="Regular"
                             Text="Last Name:"
@@ -79,7 +89,8 @@
                             Opacity="0.5"
                             Height="25"
                             Margin="155,0,0,0"/>
-                    <TextBox FontFamily="Helvetica"
+                    <TextBox x:Name="lastNameText"
+                            FontFamily="Helvetica"
                             FontWeight="UltraLight"
                             Text=""
                             FontSize="20"
@@ -108,7 +119,8 @@
                             Opacity="0.5"
                             Height="25"
                             Margin="159,0,0,0"/>
-                    <TextBox FontFamily="Helvetica"
+                    <TextBox x:Name="usernameText" 
+                            FontFamily="Helvetica"
                             FontWeight="UltraLight"
                             Text=""
                             FontSize="20"
@@ -137,7 +149,8 @@
                             Opacity="0.5"
                             Height="25"
                             Margin="165,0,0,0"/>
-                    <PasswordBox FontFamily="Helvetica"
+                    <PasswordBox x:Name="passwordText"
+                            FontFamily="Helvetica"
                             FontWeight="UltraLight"
                             Password=""
                             FontSize="20"
@@ -166,7 +179,8 @@
                             Opacity="0.5"
                             Height="25"
                             Margin="90,0,0,0"/>
-                    <PasswordBox FontFamily="Helvetica"
+                    <PasswordBox x:Name="passwordConfirmText"
+                            FontFamily="Helvetica"
                             FontWeight="UltraLight"
                             Password=""
                             FontSize="20"
@@ -183,13 +197,13 @@
                 </StackPanel>
                 <Border Width="250" Height="2" Background="White" Opacity="0.5"/>
 
-
-                <!--REGISTRATION BUTTON-->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
-                    <Button Width="100" Height="40" Content="REGISTER"/>
+                <!--LOGIN REGISTER BUTTONS-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="260" Margin="0,27,0,0">
+                    <Button Width="100" Height="40" Content="BACK" Click="BackButton_Click" Margin="0,0,60,0"/>
+                    <Button Width="100" Height="40" Content="SUBMIT" Click="SubmitButton_Click"/>
                 </StackPanel>
 
             </StackPanel>
         </Grid>
     </Grid>
-    </Window>
+</Window>
