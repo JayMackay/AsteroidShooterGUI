@@ -12,6 +12,7 @@ using System.Windows.Shapes;
 using System.Windows.Navigation;
 using AsteroidShooterGUI.Database_Models;
 using Microsoft.Data.SqlClient;
+using System.Linq;
 
 namespace AsteroidShooterGUI
 {
@@ -56,7 +57,7 @@ namespace AsteroidShooterGUI
             //User Textbox Input Fields
             string firstName = firstNameText.Text;
             string lastName = lastNameText.Text;
-            string userName = usernameText.Text;
+            string username = usernameText.Text;
             string password = passwordText.Password;
 
             //Password Parameters
@@ -97,7 +98,9 @@ namespace AsteroidShooterGUI
                 SqlCommand command = new SqlCommand(
                     "INSERT INTO Users " +
                     "(firstName, lastName, userName, password) " +
-                    "VALUES('" + firstName + "','" + lastName + "','" + userName + "','" + password + "')", connection);
+                    "VALUES('" + firstName + "','" + lastName + "','" + username + "','" + password + "')", connection);
+
+                //QUERY USING LINQ 
 
                 command.ExecuteNonQuery();
                 errormessage.Text = "You have registered successfully!";

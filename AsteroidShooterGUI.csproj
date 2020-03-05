@@ -22,12 +22,12 @@
 
   <ItemGroup>
     <Resource Include="Images\Logo.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Classes\" />
+    <Folder Include="Partial Classes\" />
   </ItemGroup>
 
 </Project>

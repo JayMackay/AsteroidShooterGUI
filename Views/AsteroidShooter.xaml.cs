@@ -12,14 +12,17 @@ using System.Windows.Shapes;
 
 namespace AsteroidShooterGUI
 {
-    /// <summary>
-    /// Interaction logic for AsteroidShooter.xaml
-    /// </summary>
     public partial class AsteroidShooter : Window
     {
         public AsteroidShooter()
         {
             InitializeComponent();
+        }
+
+        //APPLICATION DRAG MOVE METHOD
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }

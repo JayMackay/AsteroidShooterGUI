@@ -14,7 +14,7 @@ namespace AsteroidShooterGUI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     firstName = table.Column<string>(nullable: true),
                     lastName = table.Column<string>(nullable: true),
-                    userName = table.Column<string>(nullable: true),
+                    username = table.Column<string>(nullable: true),
                     password = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AsteroidShooterGUI.Migrations
 {
     [DbContext(typeof(UserDatabase))]
-    [Migration("20200304105826_InitialUserDatabase")]
+    [Migration("20200305110804_InitialUserDatabase")]
     partial class InitialUserDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -56,7 +56,7 @@ namespace AsteroidShooterGUI.Migrations
                     b.Property<string>("password")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("userName")
+                    b.Property<string>("username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");

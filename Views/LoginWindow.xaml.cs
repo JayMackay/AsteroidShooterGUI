@@ -73,7 +73,7 @@ namespace AsteroidShooterGUI
                 //SQL DML Query
                 SqlCommand command = new SqlCommand(
                     "SELECT * " +
-                    "FROM Users WHERE userName ='" + username + "'  and password ='" + password + "'", connection);
+                    "FROM Users WHERE username ='" + username + "'  and password ='" + password + "'", connection);
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.SelectCommand = command;
@@ -81,8 +81,9 @@ namespace AsteroidShooterGUI
                 adapter.Fill(dataSet);
                 if (dataSet.Tables[0].Rows.Count > 0)
                 {
+                    //Send User Credentials From One Form To Another
                     string welcomeName = dataSet.Tables[0].Rows[0]["firstName"].ToString() + " " + dataSet.Tables[0].Rows[0]["lastName"].ToString();
-                    asteroidShooterWindow.TextBlockName.Text = username; //Sending value from one form to another form.  
+                    asteroidShooterWindow.TextBlockName.Text = welcomeName;
                     asteroidShooterWindow.Show();
                     Close();
                 }

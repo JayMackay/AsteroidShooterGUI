@@ -24,19 +24,21 @@ namespace AsteroidShooterGUI.Database_Models
                 //Update-Database
     }
 
+    //User Table
     public class User
     {
         //User Table Attributes
         public int UserId { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
-        public string userName { get; set; }
+        public string username { get; set; }
         public string password { get; set; }
 
         //Linked User & Highscore Relationship
         public List<HighScore> HighScore { get; } = new List<HighScore>();
     }
 
+    //Highscore Table
     public class HighScore
     {
         //Highscores Table Attributes

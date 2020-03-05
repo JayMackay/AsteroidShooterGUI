@@ -54,7 +54,7 @@ namespace AsteroidShooterGUI.Migrations
                     b.Property<string>("password")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("userName")
+                    b.Property<string>("username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");

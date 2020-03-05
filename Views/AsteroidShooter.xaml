@@ -5,9 +5,79 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsteroidShooterGUI"
         mc:Ignorable="d"
-        Title="AsteroidShooter" Height="450" Width="800">
+        Title="AsteroidShooter" Height="540" Width="615"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize"
+        MouseDown="Window_MouseDown">
     <Grid>
-        <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" x:Name="WelcomeHeading" Text="Welcome:" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
-        <TextBlock Height="23" HorizontalAlignment="Left" Margin="90,10,0,0" x:Name="TextBlockName"  VerticalAlignment="Top" FontSize="15" FontStretch="ExtraCondensed" />
+        
+        <!--WINDOW DESIGN-->
+        <Border CornerRadius="10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF56A464" Offset="0.0"/>
+                    <GradientStop Color="#FF020236" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        
+        <Canvas Name="MyCanvas"
+        KeyDown="onKeyDown" 
+        KeyUp="onKeyUp" 
+        Focusable="True">
+
+            <!--PLAYER OBJECT-->
+            <Rectangle Name="player" 
+            Height="50" 
+            Width="60" 
+            Fill="Yellow" 
+            Canvas.Left="222" 
+            Canvas.Top="495"/>
+
+            <!--SCORE-->
+            <Label Name="scoreText" 
+            Content="Score: 0"
+            FontFamily="Helvetica"
+            FontWeight="Regular"
+            FontSize="20"
+            Foreground="White"
+            Background="Transparent"
+            Height="29"/>
+
+            <!--PLAYER DAMAGE-->
+            <Label Name="damageText" 
+            Content="Damage: 0"
+            FontFamily="Helvetica"
+            FontWeight="Regular"
+            FontSize="20"
+            Foreground="White"
+            Background="Transparent"
+            Height="34"  
+            Canvas.Right="0" Canvas.Left="511"/>
+
+            <!--WELCOME TEXT-->
+            <Grid>
+                <TextBlock x:Name="TextBlockName"
+                FontFamily="Helvetica"
+                FontWeight="Light"
+                FontSize="20"
+                Foreground="White"
+                Background="Transparent"
+                Height="20" 
+                HorizontalAlignment="Left" 
+                Margin="90,10,0,0"
+                VerticalAlignment="Top"/>
+            </Grid>
+            <TextBlock x:Name="WelcomeHeading"
+                Text="Welcome:"
+                FontFamily="Helvetica"
+                FontWeight="Regular"
+                FontSize="20"
+                Foreground="White"
+                Background="Transparent"
+                Height="29" 
+                Canvas.Left="242" Canvas.Top="5"/>
+
+        </Canvas>
     </Grid>
 </Window>
