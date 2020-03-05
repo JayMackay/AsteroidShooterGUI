@@ -7,15 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="RegistrationForm.xaml.cs">
+    <Compile Update="Views\AsteroidShooter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RegistrationForm.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="LoginWindow.xaml">
+    <Page Update="Views\AsteroidShooter.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RegistrationForm.xaml">
+    <Page Update="Views\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RegistrationForm.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

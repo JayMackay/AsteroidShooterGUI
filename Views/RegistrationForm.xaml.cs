@@ -17,9 +17,6 @@ namespace AsteroidShooterGUI
 {
     public partial class RegistrationForm : Window
     {
-
-        private User newUser;
-
         //Initialize Registration Form
         public RegistrationForm()
         {
@@ -53,6 +50,7 @@ namespace AsteroidShooterGUI
             this.Close();
         }
 
+        //SUBMIT BUTTON METHOD
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
             //User Textbox Input Fields
@@ -79,6 +77,7 @@ namespace AsteroidShooterGUI
                 errormessage.Text = "Password is not matching";
                 passwordConfirmText.Focus();
             }
+
             //SQL Database Entry
             else
             {

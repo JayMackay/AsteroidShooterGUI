@@ -2,13 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:AsteroidShooterGUI"
-             StartupUri="LoginWindow.xaml">
+             StartupUri="Views/LoginWindow.xaml">
     
     <!--BUTTON THEME RESOURCE ACCESS-->
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ButtonTheme.xaml"/>
+                <ResourceDictionary Source="Resource Dictionaries/ButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

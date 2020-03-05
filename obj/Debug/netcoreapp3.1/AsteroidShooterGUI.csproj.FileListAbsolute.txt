@@ -15,7 +15,6 @@ C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShoot
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\MahApps.Metro.IconPacks.Core.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\MahApps.Metro.IconPacks.Material.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI.csproj.CopyComplete
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\ButtonTheme.baml
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -45,8 +44,10 @@ C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\runtimes\win-
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\LoginWindow.g.cs
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\RegistrationForm.g.cs
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\LoginWindow.baml
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\RegistrationForm.baml
-C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI.csprojAssemblyReference.cache
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\AsteroidShooter.g.cs
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\LoginWindow.g.cs
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\RegistrationForm.g.cs
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\AsteroidShooter.baml
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\LoginWindow.baml
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\RegistrationForm.baml
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Resource Dictionaries\ButtonTheme.baml

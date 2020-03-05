@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\App.xaml
-31574299826
+4848921473
 
-91454331397
+10-423444251
 2121034855269
-ButtonTheme.xaml;LoginWindow.xaml;RegistrationForm.xaml;
+Resource Dictionaries\ButtonTheme.xaml;Views\AsteroidShooter.xaml;Views\LoginWindow.xaml;Views\RegistrationForm.xaml;
 
 True
 

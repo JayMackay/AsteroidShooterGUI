@@ -38,6 +38,7 @@
                 <Image Source="Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
             </StackPanel>
 
+            <!--ERROR MESSAGE TEXT-->
             <TextBlock FontFamily="Helvetica"  
                 x:Name ="errormessage"
                 HorizontalAlignment="Center"

@@ -38,10 +38,21 @@
                 <Image Source="Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
             </StackPanel>
 
+            <!--ERROR MESSAGE TEXT-->
+            <TextBlock FontFamily="Helvetica"  
+                x:Name ="errormessage"
+                HorizontalAlignment="Center"
+                Height="20" Width="248"
+                Margin="0,165,0,0"  
+                VerticalAlignment="Top" 
+                OpacityMask="Crimson" 
+                Foreground="#FFE5572C"/>
+
             <!--USERNAME INPUT-->
             <StackPanel Grid.Row="1" >
                 <StackPanel Orientation="Horizontal">
-                    <TextBox FontFamily="Helvetica"
+                    <TextBox x:Name="usernameText"
+                            FontFamily="Helvetica"
                             FontWeight="Light"
                             Text="Username"
                             FontSize="20"
@@ -63,7 +74,8 @@
                 
                 <!--PASSWORD INPUT-->
                 <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                    <PasswordBox FontFamily="Helvetica"
+                    <PasswordBox x:Name="passwordText"
+                            FontFamily="Helvetica"
                             FontWeight="Light"
                             Password="Password"
                             FontSize="20"
@@ -85,7 +97,7 @@
 
                 <!--LOGIN REGISTER BUTTONS-->
                 <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
-                    <Button Width="100" Height="40" Content="LOGIN" Margin="60,0,60,0"/>
+                    <Button Width="100" Height="40" Content="LOGIN" Click="LoginButton_Click" Margin="60,0,60,0"/>
                     <Button Width="100" Height="40" Content="REGISTER" Click="RegistrationButton_Click"/>
                 </StackPanel>
 
