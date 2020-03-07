@@ -22,9 +22,12 @@ namespace AsteroidShooterGUI
         bool moveLeft, moveRight;
 
         //Item Remove List
-        List<Rectangle> itemstoremove = new List<Rectangle>();
+        //This will be used to remove assets that are no longer needed in the main window
+        //for example destroyed ships, player bullets etc.
+        List<Rectangle> removeItems = new List<Rectangle>();
 
         //Random Class Generator
+        //This will be used to position random enemies in the game to spawn
         Random rand = new Random();
 
 
@@ -42,6 +45,27 @@ namespace AsteroidShooterGUI
         public AsteroidShooter()
         {
             InitializeComponent();
+
+            gameTimer.Interval = TimeSpan.FromMilliseconds(20);
+
+            //Link The Game Engine To The Game Timer & Start
+            gameTimer.Tick += gameEngine;
+            gameTimer.Start();
+            MyCanvas.Focus();
+
+            //Initialize The Main Window Canvas Background Using An Image
+            ImageBrush backgroundImage = new ImageBrush();
+            backgroundImage.ImageSource = new BitmapImage(new Uri("/Game Assets/Background.png"));
+            backgroundImage.TileMode = TileMode.Tile;
+            backgroundImage.Viewport = new Rect(0, 0, 0.15, 0.15);
+            backgroundImage.ViewportUnits = BrushMappingMode.RelativeToBoundingBox;
+            MyCanvas.Background = backgroundImage;
+
+
+            //Initialize The Player Sprite 
+            ImageBrush playerImage = new ImageBrush();
+            playerImage.ImageSource = new BitmapImage(new Uri("/Game Assets/Player.png"));
+            player.Fill = playerImage;
         }
 
         //APPLICATION DRAG MOVE METHOD
@@ -54,14 +78,52 @@ namespace AsteroidShooterGUI
 
         }
 
+        //PLAYER KEY INPUT MOVEMENT
         private void onKeyDown(object sender, KeyEventArgs e)
         {
+            //Set Left Or Right Movement Bool On Key Down Input
+            if (e.Key == Key.Left)
+            {
+                moveLeft = true;
+            }
+            if (e.Key == Key.Right)
+            {
+                moveRight = true;
+            }
 
         }
 
         private void onKeyUp(object sender, KeyEventArgs e)
         {
+            //Revert Left Or Right Movement Bool On Key Up Input
+            if (e.Key == Key.Left)
+            {
+                moveLeft = false;
+            }
+            if (e.Key == Key.Right)
+            {
+                moveRight = false;
+            }
 
+            //SET BULLET OBJECT ON SPACE KEY INPUT
+            if (e.Key == Key.Space)
+            {
+                Rectangle newBullet = new Rectangle
+                {
+                    Tag = "bullet",
+                    Height = 20,
+                    Width = 5,
+                    Fill = Brushes.White,
+                    Stroke = Brushes.Red
+                };
+
+                //Set Bullet Location On Player Object
+                Canvas.SetTop(newBullet, Canvas.GetTop(player) - newBullet.Height);
+                Canvas.SetLeft(newBullet, Canvas.GetLeft(player) + player.Width / 2);
+
+                //Initialize TThe Bullets On The Canvas
+                MyCanvas.Children.Add(newBullet);
+            }
         }
 
         private void makeEnemies()
