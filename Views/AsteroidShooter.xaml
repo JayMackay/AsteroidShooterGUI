@@ -21,6 +21,7 @@
             </Border.Background>
         </Border>
         
+        <!--GAME CANVAS-->
         <Canvas Name="MyCanvas"
         KeyDown="onKeyDown" 
         KeyUp="onKeyUp" 
@@ -30,7 +31,7 @@
             <Rectangle Name="player" 
             Height="50" 
             Width="60" 
-            Fill="Yellow" 
+            Fill="Black" 
             Canvas.Left="222" 
             Canvas.Top="495"/>
 
@@ -57,7 +58,7 @@
 
             <!--WELCOME TEXT-->
             <Grid>
-                <TextBlock x:Name="TextBlockName"
+            <TextBlock x:Name="TextBlockName"
                 FontFamily="Helvetica"
                 FontWeight="Light"
                 FontSize="20"

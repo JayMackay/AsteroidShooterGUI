@@ -35,15 +35,15 @@
                           FontSize="22"
                           Foreground="White"
                           HorizontalAlignment="Center" Margin="0,110,0,0"/>
-                <Image Source="Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
+                <Image Source="/Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
             </StackPanel>
 
             <!--ERROR MESSAGE TEXT-->
             <TextBlock FontFamily="Helvetica"  
                 x:Name ="errormessage"
                 HorizontalAlignment="Center"
-                Height="20" Width="248"
-                Margin="0,165,0,0"  
+                Height="20"
+                Margin="0,170,0,0"  
                 VerticalAlignment="Top" 
                 OpacityMask="Crimson" 
                 Foreground="#FFE5572C"/>
@@ -71,7 +71,7 @@
                             Foreground="White"/>
                 </StackPanel>
                 <Border Width="250" Height="2" Background="White" Opacity="0.5"/>
-                
+
                 <!--PASSWORD INPUT-->
                 <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
                     <PasswordBox x:Name="passwordText"

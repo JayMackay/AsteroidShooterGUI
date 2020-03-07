@@ -51,3 +51,6 @@ C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\Asteroi
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\LoginWindow.baml
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Views\RegistrationForm.baml
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Resource Dictionaries\ButtonTheme.baml
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI.csprojAssemblyReference.cache
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\Logo.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI_Content.g.cs

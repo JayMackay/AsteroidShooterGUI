@@ -35,14 +35,14 @@
                           FontSize="22"
                           Foreground="White"
                           HorizontalAlignment="Center" Margin="0,110,0,0"/>
-                <Image Source="Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
+                <Image Source="/Images/Logo.png" Width="80" Margin="0,-152,0,0" Height="80"/>
             </StackPanel>
 
             <!--ERROR MESSAGE TEXT-->
             <TextBlock FontFamily="Helvetica"  
                 x:Name ="errormessage"
                 HorizontalAlignment="Center"
-                Height="20" Width="248"
+                Height="20" Width="198"
                 Margin="0,150,0,0"  
                 VerticalAlignment="Top" 
                 OpacityMask="Crimson" 
