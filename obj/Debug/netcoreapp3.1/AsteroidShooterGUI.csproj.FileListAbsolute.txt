@@ -54,3 +54,10 @@ C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\Resource Dict
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI.csprojAssemblyReference.cache
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\Logo.png
 C:\Users\Jarvis\Desktop\AsteroidShooterGUI\obj\Debug\netcoreapp3.1\AsteroidShooterGUI_Content.g.cs
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\2.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\1.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\Background.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\3.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\4.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\5.png
+C:\Users\Jarvis\Desktop\AsteroidShooterGUI\bin\Debug\netcoreapp3.1\Images\Player.png

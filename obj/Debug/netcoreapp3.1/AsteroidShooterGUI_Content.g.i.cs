@@ -8,6 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/3.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/4.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/5.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/background.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/player.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/1.png")]
 
 

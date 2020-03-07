@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -55,7 +56,7 @@ namespace AsteroidShooterGUI
 
             //Initialize The Main Window Canvas Background Using An Image
             ImageBrush backgroundImage = new ImageBrush();
-            backgroundImage.ImageSource = new BitmapImage(new Uri("/Game Assets/Background.png"));
+            backgroundImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/Background.png"));
             backgroundImage.TileMode = TileMode.Tile;
             backgroundImage.Viewport = new Rect(0, 0, 0.15, 0.15);
             backgroundImage.ViewportUnits = BrushMappingMode.RelativeToBoundingBox;
@@ -64,14 +65,14 @@ namespace AsteroidShooterGUI
 
             //Initialize The Player Sprite 
             ImageBrush playerImage = new ImageBrush();
-            playerImage.ImageSource = new BitmapImage(new Uri("/Game Assets/Player.png"));
+            playerImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/Player.png"));
             player.Fill = playerImage;
         }
 
         //APPLICATION DRAG MOVE METHOD
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.LeftButton == MouseButtonState.Pressed)
+            if(e.LeftButton == MouseButtonState.Pressed)
             {
                 DragMove();
             }
@@ -82,11 +83,11 @@ namespace AsteroidShooterGUI
         private void onKeyDown(object sender, KeyEventArgs e)
         {
             //Set Left Or Right Movement Bool On Key Down Input
-            if (e.Key == Key.Left)
+            if(e.Key == Key.Left)
             {
                 moveLeft = true;
             }
-            if (e.Key == Key.Right)
+            if(e.Key == Key.Right)
             {
                 moveRight = true;
             }
@@ -96,17 +97,17 @@ namespace AsteroidShooterGUI
         private void onKeyUp(object sender, KeyEventArgs e)
         {
             //Revert Left Or Right Movement Bool On Key Up Input
-            if (e.Key == Key.Left)
+            if(e.Key == Key.Left)
             {
                 moveLeft = false;
             }
-            if (e.Key == Key.Right)
+            if(e.Key == Key.Right)
             {
                 moveRight = false;
             }
 
             //SET BULLET OBJECT ON SPACE KEY INPUT
-            if (e.Key == Key.Space)
+            if(e.Key == Key.Space)
             {
                 Rectangle newBullet = new Rectangle
                 {
@@ -139,22 +140,22 @@ namespace AsteroidShooterGUI
             switch(enemySpriteCounter)
             {
                 case 1:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/1.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/1.png"));
                     break;
                 case 2:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/2.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/2.png"));
                     break;
                 case 3:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/3.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/3.png"));
                     break;
                 case 4:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/4.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Images/4.png"));
                     break;
                 case 5:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/5.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Game Assets/5.png"));
                     break;
                 default:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/1.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Game Assets/1.png"));
                     break;
             }
 
@@ -176,9 +177,39 @@ namespace AsteroidShooterGUI
             GC.Collect();
         }
 
-        private void gameEngine()
-        {
 
+        //GAME LOGIC 
+        private void gameEngine(object sender, EventArgs e)
+        {
+            //Link Player Hit Box To Player Object
+            playerHitBox = new Rect(Canvas.GetLeft(player), Canvas.GetTop(player), player.Width, player.Height);
+
+            //Score & Damage Display
+            scoreText.Content = "Score: " + score;
+            damageText.Content = "Damaged " + damage;
+
+            //Reduce Enemy Counter To Set Spawn Loop
+            enemyCounter--;
+
+            //Generate Enemies Method
+            if(enemyCounter < 0)
+            {
+                makeEnemies();
+                enemyCounter = limit;
+            }
+
+            //Player Movement Method
+            if(moveLeft && Canvas.GetLeft(player) > 0)
+            {
+                //If Move Left Is True & Player Is Within The Canvas Boundary Then Move Left
+                Canvas.SetLeft(player, Canvas.GetLeft(player) - playerSpeed);
+            }
+            if (moveRight && Canvas.GetLeft(player) + 90 < Application.Current.MainWindow.Width)
+            {
+                //If Move Right Is True & Player "Left Position + 90" Is Less Than The Canvas Then Move Right
+                Canvas.SetLeft(player, Canvas.GetLeft(player) + playerSpeed);
+            }
         }
+
     }
 }

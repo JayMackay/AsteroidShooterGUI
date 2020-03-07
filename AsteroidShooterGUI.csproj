@@ -7,7 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Game Assets\**" />
+    <EmbeddedResource Remove="Game Assets\**" />
+    <None Remove="Game Assets\**" />
+    <Page Remove="Game Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\1.png" />
+    <None Remove="Images\2.png" />
+    <None Remove="Images\3.png" />
+    <None Remove="Images\4.png" />
+    <None Remove="Images\5.png" />
+    <None Remove="Images\Background.png" />
     <None Remove="Images\Logo.png" />
+    <None Remove="Images\Player.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,14 +35,37 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Images\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Player.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Game Assets\" />
     <Folder Include="Partial Classes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
