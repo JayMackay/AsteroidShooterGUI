@@ -126,9 +126,54 @@ namespace AsteroidShooterGUI
             }
         }
 
+        //INITIALIZE ENEMY OBJECTS
         private void makeEnemies()
         {
+            //New Enemy Sprite Brush
+            ImageBrush enemySprite = new ImageBrush();
 
+            //Generate A Random Number Inside The Enemy Sprite Counter
+            enemySpriteCounter = rand.Next(1, 5);
+
+            //Switch Statement To Assign Enemy Sprite In relation To Enemy Sprite Counter
+            switch(enemySpriteCounter)
+            {
+                case 1:
+                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/1.png"));
+                    break;
+                case 2:
+                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/2.png"));
+                    break;
+                case 3:
+                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/3.png"));
+                    break;
+                case 4:
+                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/4.png"));
+                    break;
+                case 5:
+                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/5.png"));
+                    break;
+                default:
+                    enemySprite.ImageSource = new BitmapImage(new Uri("/Game Assets/1.png"));
+                    break;
+            }
+
+            //Initialize Enemy Object & Set Sprite Image
+            Rectangle newEnemy = new Rectangle
+            {
+                Tag = "enemy",
+                Height = 50,
+                Width = 56,
+                Fill = enemySprite
+            };
+
+            //Generate Enemy Object Within The Canvas
+            Canvas.SetTop(newEnemy, -100);
+            Canvas.SetLeft(newEnemy, rand.Next(30, 430));
+            MyCanvas.Children.Add(newEnemy);
+
+            //Garbage Collection, Collect Any Unused Resources
+            GC.Collect();
         }
 
         private void gameEngine()
