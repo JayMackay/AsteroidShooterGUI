@@ -10,7 +10,7 @@
         WindowStyle="None" ResizeMode="NoResize"
         MouseDown="Window_MouseDown">
     <Grid>
-        
+
         <!--WINDOW DESIGN-->
         <Border CornerRadius="10" Grid.RowSpan="2">
             <Border.Background>
@@ -20,7 +20,7 @@
                 </LinearGradientBrush>
             </Border.Background>
         </Border>
-        
+
         <!--GAME CANVAS-->
         <Canvas Name="MyCanvas"
         KeyDown="onKeyDown" 
@@ -54,21 +54,17 @@
             Foreground="White"
             Background="Transparent"
             Height="34"  
-            Canvas.Right="0" Canvas.Left="511"/>
+            Canvas.Right="0" Canvas.Left="478" Width="137"/>
 
             <!--WELCOME TEXT-->
-            <Grid>
             <TextBlock x:Name="TextBlockName"
                 FontFamily="Helvetica"
                 FontWeight="Light"
                 FontSize="20"
                 Foreground="White"
                 Background="Transparent"
-                Height="20" 
-                HorizontalAlignment="Left" 
-                Margin="90,10,0,0"
-                VerticalAlignment="Top"/>
-            </Grid>
+                Height="24" 
+                Margin="90,10,-2,0" Canvas.Left="198" Width="158" Canvas.Top="-7"/>
             <TextBlock x:Name="WelcomeHeading"
                 Text="Welcome:"
                 FontFamily="Helvetica"
@@ -77,7 +73,7 @@
                 Foreground="White"
                 Background="Transparent"
                 Height="29" 
-                Canvas.Left="242" Canvas.Top="5"/>
+                Canvas.Left="198" Canvas.Top="6"/>
 
         </Canvas>
     </Grid>

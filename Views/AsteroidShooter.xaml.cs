@@ -204,11 +204,103 @@ namespace AsteroidShooterGUI
                 //If Move Left Is True & Player Is Within The Canvas Boundary Then Move Left
                 Canvas.SetLeft(player, Canvas.GetLeft(player) - playerSpeed);
             }
-            if (moveRight && Canvas.GetLeft(player) + 90 < Application.Current.MainWindow.Width)
+            if(moveRight && Canvas.GetLeft(player) + 90 < Application.Current.MainWindow.Width)
             {
                 //If Move Right Is True & Player "Left Position + 90" Is Less Than The Canvas Then Move Right
                 Canvas.SetLeft(player, Canvas.GetLeft(player) + playerSpeed);
             }
+
+
+            //BULLET & ENEMY LOGIC MAIN LOOP
+            foreach(var x in MyCanvas.Children.OfType<Rectangle>())
+            {
+                //If a rectangle has the tag "bullet"
+                if(x is Rectangle && (string)x.Tag == "bullet")
+                {
+                    //Move the bullet object towards top of the screen
+                    Canvas.SetTop(x, Canvas.GetTop(x) - 20);
+
+                    //Initialize a new "Rect" class with the bullet properties
+                    Rect bullet = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+
+                    //If bullet has reached the top of the screen add to the remove list for garbage collection
+                    if(Canvas.GetTop(x) < 10)
+                    {
+                        removeItems.Add(x);
+                    }
+
+                    //ENEMY INITIALIZATION LOOP
+                    foreach (var y in MyCanvas.Children.OfType<Rectangle>())
+                    {
+                        //If a rectangle has the tag "enemy"
+                        if (y is Rectangle && (string)y.Tag == "enemy")
+                        {
+                            //Initialize a new "Rect" class with the enemies properties
+                            Rect enemy = new Rect(Canvas.GetLeft(y), Canvas.GetTop(y), y.Width, y.Height);
+
+                            //ENEMY & BULLET COLLISION CHECK
+                            if (bullet.IntersectsWith(enemy))
+                            {
+                                removeItems.Add(x); 
+                                removeItems.Add(y);
+                                score++;
+                            }
+                        }
+
+                    }
+                }
+
+                //ENEMY MOVEMENT LOGIC
+                if (x is Rectangle && (string)x.Tag == "enemy")
+                {
+                    //Enemy Movement
+                    Canvas.SetTop(x, Canvas.GetTop(x) + 10);
+
+                    //Enemy hit box initializion
+                    Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+
+                    //Enemy position check
+                    if (Canvas.GetTop(x) + 150 > 700)
+                    {
+                        //If enemy position is past the player position add 10 to the damage counter
+                        removeItems.Add(x);
+                        damage += 10;
+                    }
+
+                    //If the player and enemy hit box are colliding add 5 to the damage counter
+                    if (playerHitBox.IntersectsWith(enemy))
+                    {
+                        damage += 5;
+                        removeItems.Add(x);
+                    }
+                }
+
+
+            }
+
+            //GAME SCORE LOGIC
+            //Reduce enemy spawn limiter so enemies will spawn faster
+            if (score > 5)
+            {
+                limit = 20; 
+            }
+
+            //GAME LOOP STOPPER
+            if (damage > 99)
+            {
+                gameTimer.Stop();
+                damageText.Content = "Damaged: 100";
+                damageText.Foreground = Brushes.Red;
+                //Pop up message box
+                MessageBox.Show("Well Done!" + Environment.NewLine + "You have destroyed " + score + " Alien ships");
+            }
+
+            //OBJECT REMOVE
+            foreach (Rectangle y in removeItems)
+            {
+                MyCanvas.Children.Remove(y);
+            }
+
         }
 
     }
