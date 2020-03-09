@@ -64,7 +64,7 @@
                 Foreground="White"
                 Background="Transparent"
                 Height="24" 
-                Margin="90,10,-2,0" Canvas.Left="198" Width="158" Canvas.Top="-7"/>
+                Margin="97,14,0,0" Canvas.Left="198" Width="158" Canvas.Top="-7"/>
             <TextBlock x:Name="WelcomeHeading"
                 Text="Welcome:"
                 FontFamily="Helvetica"
